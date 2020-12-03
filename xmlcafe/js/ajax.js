@@ -47,9 +47,9 @@ function ajaxReadMenu(file){
         if (arrayNav[i].length !== 0 && arrayNav[i].firstChild != null) {
           var nameMenu = arrayNav[i].firstChild.data;
         } else {
-          nameMenu = 'нет nameMenu';
+          nameMenu = 'not nameMenu';
         }
-        if (nameMenu != 'нет nameMenu') {
+        if (nameMenu != 'not nameMenu') {
           var hrefI = i+1;
           document.getElementById('ulNav').innerHTML +=
           '<li id="svgMenu' + hrefI + '" class="svg"><a href="#blockMenu' + hrefI + '" class="scroll-to">' + nameMenu + '</a></li>';
@@ -66,7 +66,7 @@ function ajaxReadMenu(file){
           if (array[i].getElementsByTagName('name').length !== 0 && array[i].getElementsByTagName('name')[0].firstChild != null) {
             var name = array[i].getElementsByTagName('name')[0].firstChild.data;
           } else {
-            name = 'нет name';
+            name = 'not name';
           }
           if (array[i].getElementsByTagName('description').length !== 0 && array[i].getElementsByTagName('description')[0].firstChild != null) {
             var description = array[i].getElementsByTagName('description')[0].firstChild.data;
@@ -91,7 +91,7 @@ function ajaxReadMenu(file){
             img = 'not.png';
           }
           document.getElementById(hrefId).innerHTML +=
-          '<li itemscope itemprop="hasMenuItem" itemtype="https://schema.org/MenuItem"><div class="image"><div class="badge-wrapper"><img itemprop="image" alt="' + name + '" title="' + name + '" src="/img/menu/' + img + '"></div></div><h5><span itemprop="name">' + name + '</span></h5><span itemprop="description" class="summary">' + description + '</span><table class="features ' + hiddenButton + '"><tbody><tr><td class="name">Weight: </td><td class="value" itemprop="description">' + weight + ' oz</td></tr></tbody></table><div class="add-input"><button type="button" onclick="this.nextElementSibling.stepDown()"' + hiddenButton + '>-</button><input class="add" type="number" min="0" onblur="if(this.value<0) this.value=0" value="" data-name="' + name + '" data-price="' + price + '" data-weight="' + weight + '" readonly><button type="button" onclick="this.previousElementSibling.stepUp()"' + hiddenButton + '>+</button></div><div itemprop="offers" class="offers ' + hiddenButton + '" itemscope itemtype="https://schema.org/Offer"><div class="pricing"><span class="price nowrap"><span>$</span>' + price + '</span><meta itemprop="price" content="' + price + '"><meta itemprop="priceCurrency" content="$"></div></div></li>';
+          '<li itemscope itemprop="hasMenuItem" itemtype="https://schema.org/MenuItem"><div class="image"><div class="badge-wrapper"><img itemprop="image" alt="' + name + '" title="' + name + '" src="img/menu/' + img + '"></div></div><h5><span itemprop="name">' + name + '</span></h5><span itemprop="description" class="summary">' + description + '</span><table class="features ' + hiddenButton + '"><tbody><tr><td class="name">Weight: </td><td class="value" itemprop="description">' + weight + ' oz</td></tr></tbody></table><div class="add-input"><button type="button" onclick="this.nextElementSibling.stepDown()"' + hiddenButton + '>-</button><input class="add" type="number" min="0" onblur="if(this.value<0) this.value=0" value="" data-name="' + name + '" data-price="' + price + '" data-weight="' + weight + '" readonly><button type="button" onclick="this.previousElementSibling.stepUp()"' + hiddenButton + '>+</button></div><div itemprop="offers" class="offers ' + hiddenButton + '" itemscope itemtype="https://schema.org/Offer"><div class="pricing"><span class="price nowrap"><span>$</span>' + price + '</span><meta itemprop="price" content="' + price + '"><meta itemprop="priceCurrency" content="$"></div></div></li>';
         }
       }
     }
