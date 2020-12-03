@@ -13,11 +13,11 @@ function ajaxReadSettings(file){
 
       document.querySelector('title').innerHTML = arraySettings[0].getElementsByTagName("name")[0].innerHTML;
       document.querySelector('meta[name="description"]').content = arraySettings[0].getElementsByTagName("description")[0].innerHTML;
-      document.querySelector('#logo img').src = '../img/' + arraySettings[0].getElementsByTagName("logo")[0].innerHTML;
+      document.querySelector('#logo img').src = 'img/' + arraySettings[0].getElementsByTagName("logo")[0].innerHTML;
 
       document.getElementById('telephone').innerHTML = '<a href="tel:'
-      + arraySettings[0].getElementsByTagName("tel")[0].innerHTML + '"><img src="../img/call.png" alt="Telephone"><span>'
-      + arraySettings[0].getElementsByTagName("tel")[0].innerHTML + '<span><img src="../img/timeW.png" alt="Time">'
+      + arraySettings[0].getElementsByTagName("tel")[0].innerHTML + '"><img src="img/call.png" alt="Telephone"><span>'
+      + arraySettings[0].getElementsByTagName("tel")[0].innerHTML + '<span><img src="img/timeW.png" alt="Time">'
       + arraySettings[0].getElementsByTagName("time")[0].innerHTML + '</span></span></a>';
 
       var map = arraySettings[0].getElementsByTagName("map")[0].innerHTML.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
