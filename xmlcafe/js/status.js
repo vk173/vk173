@@ -35,7 +35,7 @@ function ajaxRead(file){
     if(xmlObj.readyState == 4){
       const statusOrder = xmlObj.responseXML.getElementsByTagName('status')[0].firstChild.data;
       var messageOrder = document.getElementById('messageOrder');
-      messageOrder.innerHTML = 'Order №'  + numOrder + '<h2>' + statusOrder + '</h2>';
+      messageOrder.innerHTML = 'Order №1<h2>' + statusOrder + '</h2>';
       if(statusOrder == 'Awaiting verification') document.getElementById('statusImg').className = 'check';
       if(statusOrder == 'Cooking') document.getElementById('statusImg').className = 'cook';
       if(statusOrder == 'Sent by courier') document.getElementById('statusImg').className = 'check';
