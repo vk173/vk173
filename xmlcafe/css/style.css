@@ -356,7 +356,7 @@ ul.thumbs li { display: inline-flex; flex-wrap: wrap; align-content: space-betwe
     line-height: 1.5;
     overflow: auto;
   }
-  .box-order input[type="submit"] {
+  .box-order input[type="button"] {
     color: #fff;
     font-size: 18px;
     height: 50px;
