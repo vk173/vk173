@@ -12,7 +12,7 @@ function readSettings(file){
       const arraySettings = xmlObj.responseXML.getElementsByTagName('root');
 
       document.querySelector('title').innerHTML = arraySettings[0].getElementsByTagName("name")[0].innerHTML;
-      document.querySelector('#logo img').src = '../img/' + arraySettings[0].getElementsByTagName("logo")[0].innerHTML;
+      document.querySelector('#logo img').src = 'img/' + arraySettings[0].getElementsByTagName("logo")[0].innerHTML;
 
     }
   }
