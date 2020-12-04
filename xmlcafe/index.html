@@ -42,7 +42,7 @@
       <span id="out">
       </span>
       <div id="list"></div>
-      <form method="post" action="order.php" onsubmit='if(out.innerHTML == "<span>Total </span> $0<br><span>Weight </span>0 lb"){list.innerHTML = "<center><h2>Empty order</h2></center>"; return false;}'>
+      <form method="post" action="status.html" onsubmit='if(out.innerHTML == "<span>Total </span> $0<br><span>Weight </span>0 lb"){list.innerHTML = "<center><h2>Empty order</h2></center>"; return false;}'>
         <div class="box-order">
           <input type="hidden" id="dataList" name="dataList" value="">
           <input id="name" type="text" name="name" placeholder="Name" value="" required>
