@@ -42,7 +42,7 @@
       <span id="out">
       </span>
       <div id="list"></div>
-      <form method="post" action="status.html" onsubmit='if(out.innerHTML == "<span>Total </span> $0<br><span>Weight </span>0 lb"){list.innerHTML = "<center><h2>Empty order</h2></center>"; return false;}'>
+      <form method="post" action="" onsubmit='if(out.innerHTML == "<span>Total </span> $0<br><span>Weight </span>0 lb"){list.innerHTML = "<center><h2>Empty order</h2></center>"; return false;}'>
         <div class="box-order">
           <input type="hidden" id="dataList" name="dataList" value="">
           <input id="name" type="text" name="name" placeholder="Name" value="" required>
@@ -50,7 +50,7 @@
           <input id="address" type="text" name="address" placeholder="Address" value="" required>
           <input id="comment" type="text" name="comment" placeholder="Comment" value="">
           <div>
-            <input type="submit" value="Buy" name="">
+            <input type="button" value="Buy" name="" onclick="window.location.replace('status.hhml')>
           </div>
         </div>
       </form>
