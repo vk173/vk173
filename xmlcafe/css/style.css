@@ -159,7 +159,7 @@ input[type="text"], input[type="tel"] {
   font-size: 24px;
   box-sizing: border-box;
 }
-input[type="submit"] {
+input[type="button"] {
   cursor: pointer;
 }
 
