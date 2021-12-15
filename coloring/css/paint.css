@@ -27,10 +27,10 @@ body {
     height: 100px;
 }
 #tools a#random {
-    background: url(/images/color.svg) center no-repeat;
+    background: url(/coloring/images/color.svg) center no-repeat;
 }
 #tools a#clear {
-    background: url(/images/clear.svg) center no-repeat;
+    background: url(/coloring/images/clear.svg) center no-repeat;
 }
 .button {
     cursor: pointer;
